@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed is key</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    
+    <script>
+    const firebaseConfig = {
+
+          apiKey: "AIzaSyAiBnG2w4gvcOsidw0zMwNKtaNOG6gSKrw",
+          authDomain: "my-game-71b35.firebaseapp.com",
+          databaseURL: "https://my-game-71b35-default-rtdb.firebaseio.com",
+          projectId: "my-game-71b35",
+          storageBucket: "my-game-71b35.appspot.com",
+          messagingSenderId: "40953711215",
+          appId: "1:40953711215:web:3c8648ac04b1756c2edb9a"
+          };
+
+
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig); 
+       //const app = initializeApp(firebaseConfig);
+    </script>
+
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
